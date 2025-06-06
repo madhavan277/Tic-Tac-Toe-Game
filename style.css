@@ -9,13 +9,14 @@ body{
 .container{
     height:70vh;
 }
-.Game{
-    height:60vmin;/*1%of viewport smaller dimension*/
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    align-items:center;
+.Game {
+    height: 60vmin;/*1%of viewport smaller dimension*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr); 
     gap: 1.5vmin;
+    justify-items: center; 
+    align-items: center;   
 }
 .box{
     height:18vmin;
